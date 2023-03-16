@@ -1,0 +1,29 @@
+:root{
+	--fsBase: 18px;
+	--fsLabel: 0.75em;
+	--fsField: 1em;
+   --fsMargin: 0.3em;
+   --fsPadding: 0.3em;
+	--colWidth: 50%;
+	--IconBig: 4em;
+	--IconMedium: 3em;
+	--fsIconTitle: 1em;
+	--fsIconDesc: 0.5em;
+}
+.icon-big {
+    font-size: var(--IconBig);
+    margin:0.3em;
+    padding:0.3em;
+    cursor:pointer;
+}
+.icon-medium {
+    font-size: var(--IconMedium);
+   float: right;
+    margin:0.3em;
+    padding:0.3em;
+    cursor:pointer;
+}
+.sub-container:{
+   margin: calc(var(--fsMargin)-10px),
+   padding: var(--fsPadding),
+}

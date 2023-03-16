@@ -1,0 +1,8 @@
+{
+  "Title": "gapps launcher",
+  "MainHtml": "gappslauncher",
+  "StartUpFolder": "C:\\MyWorks\\_GAPPS2023\\projects\\GAPPS-launcher-2023\\src",
+  "SingleJS": false,
+  "TSOutFolder": null,
+  "DistFolder": null
+}

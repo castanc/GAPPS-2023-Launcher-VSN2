@@ -1,0 +1,12 @@
+<div id="divDebug" class="hidden">
+	<div class="row">
+		<button id="btnDebug" type="button" class="gray" onclick="openDebugFile()">Load File</button>
+		<button id="btnDebug" type="button" class="gray" onclick="copyToClipboard(config.LogsPath,true)">Copy Logs Path</button>
+		<button id="btnDebug" type="button" class="gray" onclick="copyToClipboard(config.RootFolder,true)">Copy Root Path</button>
+	</div>
+	<div class="row">
+	<textarea id="debug" rows="30" onchange="loadMappingsJSON()"></textarea>
+</div>
+	<div id="divSelectFiles" class="hidden">
+	</div>
+</div>

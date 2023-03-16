@@ -1,0 +1,102 @@
+<style>
+    .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-info h2 {
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+</style>
+<div class="card">
+    <img src="https://via.placeholder.com/150" alt="Card Image">
+    <div class="card-info">
+      <h2>Card Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, mauris vel pharetra condimentum, ex tellus luctus lorem, eu bibendum velit quam eu enim.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Card Image">
+    <div class="card-info">
+      <h2>Card Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, mauris vel pharetra condimentum, ex tellus luctus lorem, eu bibendum velit quam eu enim.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Card Image">
+    <div class="card-info">
+      <h2>Card Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, mauris vel pharetra condimentum, ex tellus luctus lorem, eu bibendum velit quam eu enim.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Card Image">
+    <div class="card-info">
+      <h2>Card Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, mauris vel pharetra condimentum, ex tellus luctus lorem, eu bibendum velit quam eu enim.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+  <script>
+    // Responsive Card Layout
+function adjustCardLayout() {
+  var cards = document.querySelectorAll('.card');
+  if (window.innerWidth < 576) {
+    cards.forEach(function(card) {
+      card.classList.remove('flex-row');
+      card.classList.add('flex-col');
+    });
+  } else {
+    cards.forEach(function(card) {
+      card.classList.remove('flex-col');
+      card.classList.add('flex-row');
+    });
+  }
+}
+
+window.addEventListener('resize', adjustCardLayout);
+adjustCardLayout();
+
+  </script>

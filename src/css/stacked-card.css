@@ -1,0 +1,74 @@
+.st-card-stack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .st-card {
+    width: calc(var(--colWidth) - 20px);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .st-card h2 {
+    margin: 10px;
+    font-size: var(--fsIconTitle);
+  }
+  
+  .st-card p {
+    margin: 10px;
+    font-size: var(--fsIconDesc);
+  }
+  
+
+  .st-card-landscape {
+    width: calc(20% - 20px);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .st-card-portrait {
+    width: calc(50% - 20px);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  
+  .st-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .st-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .st-card-landscape h2 {
+    margin: 10px;
+    font-size: 24px;
+  }
+  
+  .st-card-landscape p {
+    margin: 8px;
+  }
+  
+  .st-card-portrait h2 {
+    margin: 10px;
+    font-size: 48px;
+  }
+  
+  .st-card-landscape p {
+    margin: 48px;
+    font-size: 28px;
+  }
+  
